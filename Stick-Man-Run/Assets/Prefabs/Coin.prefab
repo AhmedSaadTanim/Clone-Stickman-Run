@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000013555364002}
-  - component: {fileID: 223292287248499745}
+  - component: {fileID: 7721919347145343277}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Coin
@@ -33,7 +33,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 59.492004, z: 0}
---- !u!65 &223292287248499745
+--- !u!65 &7721919347145343277
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,8 +44,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.23099545, y: 0.24983692, z: 0.067249656}
-  m_Center: {x: 0.017750354, y: 0.948786, z: -0.019844893}
+  m_Size: {x: 0.24888173, y: 0.24286461, z: 0.05931297}
+  m_Center: {x: -0.0045571923, y: 0.9457257, z: -0.0054685106}
 --- !u!1 &1000013760068644
 GameObject:
   m_ObjectHideFlags: 0
@@ -55,7 +55,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000010444600384}
-  - component: {fileID: 6176352043901897921}
+  - component: {fileID: 7058692752881102295}
   m_Layer: 0
   m_Name: coin
   m_TagString: Untagged
@@ -79,7 +79,7 @@ Transform:
   m_Father: {fileID: 4000013555364002}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &6176352043901897921
+--- !u!65 &7058692752881102295
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,8 +90,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.23849802, y: 0.24836299, z: 0.062469978}
-  m_Center: {x: -0.003074616, y: 0.0015996397, z: -0.008250369}
+  m_Size: {x: 0.26205525, y: 0.25611192, z: 0.06965426}
+  m_Center: {x: -0.0033505333, y: -0.0021265745, z: -0.0071072727}
 --- !u!1 &1000013919102196
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,8 +103,8 @@ GameObject:
   - component: {fileID: 4000010888897226}
   - component: {fileID: 33000012841361078}
   - component: {fileID: 23000013388907530}
+  - component: {fileID: 4229034968208368090}
   - component: {fileID: 95000012458517520}
-  - component: {fileID: 4621913472449476312}
   m_Layer: 0
   m_Name: coin
   m_TagString: Untagged
@@ -177,6 +177,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4229034968208368090
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013919102196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.24888173, y: 0.07091499, z: 0.25593475}
+  m_Center: {x: -0.004554763, y: 0.00511856, z: -0.0010003307}
 --- !u!95 &95000012458517520
 Animator:
   serializedVersion: 4
@@ -197,16 +210,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &4621913472449476312
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000013919102196}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.24891318, y: 0.044373088, z: 0.25136742}
-  m_Center: {x: 0, y: 0, z: 0}

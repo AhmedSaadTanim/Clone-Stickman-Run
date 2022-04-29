@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public float endStage = 118;
     public int mSpeed = 5;
     public int speed = 1;
+    public float touchSpeed = 0.01f;
     private void Start()
     {
         endStage = 118; 
@@ -40,9 +41,8 @@ public class PlayerController : MonoBehaviour
             //move player forward at constant speed
             transform.Translate(Vector3.back * speed * Time.deltaTime);
 
-            //player control to move sideways 
-            horizontalInput = Input.GetAxis("Horizontal");
-            transform.Translate(Vector3.left * horizontalInput * mSpeed * Time.deltaTime);
+            MoveByKeyboard();
+            MoveByTouch();
 
             //capping siderange
             if (transform.position.x < -sideRange)
@@ -89,6 +89,28 @@ public class PlayerController : MonoBehaviour
         }
     }
     
+
+    private void MoveByKeyboard()
+    {
+        //player control to move sideways 
+        horizontalInput = Input.GetAxis("Horizontal");
+        transform.Translate(Vector3.left * horizontalInput * mSpeed * Time.deltaTime);
+    }
+
+
+    private void MoveByTouch()
+    {
+        if(Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if(touch.phase == TouchPhase.Moved)
+            {
+                transform.position = new Vector3(transform.position.x + touch.deltaPosition.x * touchSpeed,
+                                                 transform.position.y, transform.position.z);
+            }
+        }
+    }
+
     private void ActivateNext()
     {
         nextLevel.SetActive(true);
